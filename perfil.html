@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Mi Perfil</title>
+
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function validar() {
+                let x = document.forms["formulario"]["nombre"].value;
+                let x2 = document.forms["formulario"]["correo"].value;
+                if (x == "" || x2 == "") {
+                    alert("Los campos no deben estar vacios");
+                    return false;
+                }
+            
+                if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.forms["formulario"]["correo"].value))
+                {
+                    alert("Mensaje Enviado.");
+                    return (true);
+                }
+                    else
+                {
+                        alert("correo no válido!");
+                        return (false); 
+                }
+
+                alert("Mensaje Enviado.");
+                return (true);
+
+            }
+        </script>
+
+    </head>
+
+
+    <body>
+        <header><h1>Mi Perfil<br>Karla Martinez</h1></header>
+    </body>
+
+    <section class="sobre_mi">
+        <h2>Sobre Mí</h2>
+        <p>
+            Me llamo Karla Martinez, tengo 38 años, me llama mucho la atención el area de la 
+            informática porque me permite tener mas oportunidades tanto creativas como laborales. 
+            En el futuro espero abrir mi propia empresar y seguir aprendiendo.
+        </p>
+    </section>
+    <section class="exp">
+        <h2>Experiencia</h2>
+        <p>
+            Trabajo como freelancer en proyectos creativos y vendo postres de fresa.
+        </p>
+    </section>
+    <section class="edu">
+        <h2>Educación</h2>
+        <p>
+            Cursando TSU de Informática en el IUTA, actualmente por el 6to nivel.
+        </p>
+    </section>
+
+    <section>
+        <p style="font-size: 150%;">Envie un Mensaje.</p>
+        <form action="" action="/perfil.html" name="formulario" onsubmit="return validar()" method="post">
+            <label for="nombre">Nombre</label><br>
+            <input type="text" name="nombre"><br>
+
+            <label for="correo">Correo</label><br>
+            <input type="text" name="correo"><br>
+            <label for="msj">Mensaje</label><br>
+            <textarea name="msj" id="" cols="30" rows="10"></textarea><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+</html>

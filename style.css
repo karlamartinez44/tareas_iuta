@@ -1,0 +1,51 @@
+
+html {
+    background-color: rgb(55, 58, 58);
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    outline-style: solid;
+    outline-color: rgb(142, 165, 185);
+    border-radius: 30px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    letter-spacing: 8px;
+    padding: 3% 0 3% 0;
+    background-color: rgb(105, 78, 108);
+    margin-bottom: 50px;
+}
+
+
+section {
+
+    background-color: rgb(73, 63, 77);
+    color: aliceblue;
+    margin: 3% 10% 3% 10%;
+    padding: 10px 50px 10px 50px;
+    border-radius: 10px;
+    outline-width: 3px;
+    outline-style: solid;
+    outline-color: rgb(80, 118, 158);
+}
+
+label {
+    font-weight: 600;
+}
+
+
+textarea {
+    color: aliceblue;
+    width: 40%;
+    background-color: rgb(39, 30, 42);
+}
+
+
+
+input {
+    padding: 5px;
+    color: aliceblue;
+    width: 40%;
+    background-color: rgb(39, 30, 42);
+}
